@@ -1,2 +1,5 @@
 # sales_sql_project
-This project is a SQL-based sales data analysis using a 5-month dataset containing order-level transaction records.  The dataset includes key business fields such as order ID, order date, region, product, sales, and quantity. 
+This project analyzes 5 months of sales data using SQL.  
+It focuses on extracting business insights from transactional data such as revenue trends, regional performance, and product-level analysis.
+
+The goal is to demonstrate practical SQL skills for data analysis and reporting.
