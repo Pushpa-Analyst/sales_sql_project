@@ -2,8 +2,6 @@ Insight 1 : West is the highest performing region with a total sales of 11290.
 Insight 2 : Laptop is the best selling product.(21 Laptops with total sales worth 31000).
 Insight 3 : Product Performance Across Regions
 
--- Goal: To identify which products perform best in each region and how sales are distributed.
-
 SELECT 
     Region,
     Product,
@@ -22,3 +20,14 @@ ORDER BY Region, total_sales DESC;
     North → balanced but lower revenue products
     South → mixed demand (Laptop + Keyboard + Mouse)
     East → more balanced spread
+
+Insight 4 : Average Order Value by Product
+
+        SELECT 
+    Product,
+    AVG(Sales) AS avg_order_value
+FROM sales_data
+GROUP BY Product
+ORDER BY avg_order_value DESC;
+
+-- This query shows the pricing power of products.
